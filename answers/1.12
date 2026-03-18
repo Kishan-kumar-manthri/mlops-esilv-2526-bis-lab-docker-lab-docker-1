@@ -1,2 +1,2 @@
-docker run -d -p 5001:5000 -e CURRENT_ENVIRONMENT=development --name back-container virat17/back-app:latest
-docker run -d -p 8080:80 -e WS_BACK_URL=http://localhost:5001 --name front-container virat17/front-app:latest
+docker run -d -p 5001:5000 -e CURRENT_ENVIRONMENT=development --name back virat17/back-app:latest
+docker run -d -p 8080:80 -e TR_WS_BACK_URL="http://localhost:5001" --name front virat17/front-app:latest
